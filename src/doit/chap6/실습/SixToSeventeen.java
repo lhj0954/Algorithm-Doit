@@ -26,13 +26,13 @@ public class SixToSeventeen {
     }
 
     static void heapSort(int[] arr, int n) {
-        for (int i = (n-1)/2; i >= 0; i--) {
+        for (int i = (n-1)/2; i >= 0; i--) { //배열을 힙으로 만들기
             heap(arr, i, n-1);
         }
 
         for (int i = n -1; i >0; i--) {
-            swap(arr, 0, i);
-            heap(arr, 0, i - 1);
+            swap(arr, 0, i); //가장 큰 요소와 마지막 요소를 바꿈
+            heap(arr, 0, i - 1); //바뀐 마지막 요소를 내려가면서 다시 힙으로 만들기
         }
     }
 
