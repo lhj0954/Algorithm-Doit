@@ -17,9 +17,9 @@ public class SixToEighteen {
             b[--f[a[i]]] = a[i];
         }
 
-        for (int i = 0; i < n; i++) { //배열 복사하기
+        for (int i = 0; i < n; i++) { //배열 복사하기기
             a[i] = b[i];
-        }
+       }
     }
 
     public static void main(String[] args) {
